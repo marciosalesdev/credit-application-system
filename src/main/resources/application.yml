@@ -6,8 +6,14 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+  jpa:
+    hibernate:
+     properties:
+       hinernate.format_sql: true
+    show-sql: true
+
   datasource:
       url: jdbc:h2:mem:credit_application_system_db
       username: marcio
-      password: 1234
+      password:
 
